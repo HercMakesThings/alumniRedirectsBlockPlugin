@@ -1,0 +1,1 @@
+Custom WordPress Plugin for creating a custom gutenberg block that handles automatic redirects from the post on the alumni network home site to the individual student's portfolio site on the network
