@@ -26,7 +26,8 @@ class AlumniRedirectsBlock{
 
    function clientHTML(){
         $current_title = get_the_title();
-        $new_post_id = '18';
+        // $new_post_id = '18';
+        $preg_title = preg_replace('/\W/', '', $current_title);
        ob_start(); ?>
             <script>
                 // window.addEventListener('load', (event) => {
@@ -36,7 +37,9 @@ class AlumniRedirectsBlock{
                 //     window.location.href = 'https://twitter.com'; 
                 // });
                 // window.open('https://twitter.com', '_self');
-                window.open('https://<?php echo esc_html($current_title); ?>.com', '_self');
+                
+
+                window.open('https://<?php echo esc_html($preg_title); ?>.firstportfol.io', '_self');
             </script>
        <?php return ob_get_clean();
    }
