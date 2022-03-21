@@ -39,7 +39,7 @@ class AlumniRedirectsBlock{
                 // window.open('https://twitter.com', '_self');
                 
 
-                window.open('https://<?php echo esc_html($preg_title); ?>.firstportfol.io', '_self');
+                window.location.replace('https://<?php echo esc_html($preg_title); ?>.firstportfol.io', '_self');
             </script>
        <?php return ob_get_clean();
    }
