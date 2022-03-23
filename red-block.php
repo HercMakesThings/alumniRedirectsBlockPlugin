@@ -5,6 +5,7 @@ Description: Custom plugin developed that creates a custom block that automatica
 Author: Jeremy De Lancey
 Version: 1.0.0
 Text Domain: red-block-domain
+* @package AlumniNetwork
 */
 
 if ( ! defined('ABSPATH')){
